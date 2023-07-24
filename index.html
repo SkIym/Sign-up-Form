@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/komi" type="text/css"/>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,27 +24,28 @@
                     <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1.3vw;">Let's do this!</span>
                     <form action="/" method="post">
                         
-                        <input type="text" name="firstname" id="firstname" placeholder="First Name*"
-                        pattern="[a-zA-Z]+">
+                        <input type="text" name="firstname" id="firstname" placeholder="FIRST NAME"
+                        pattern="[^\d]+" class="nonpass">
 
-                        <input type="text" name="lastname" id="lastname" placeholder="Last Name*" pattern="[a-zA-Z]+">
+                        <input type="text" name="lastname" id="lastname" placeholder="LAST NAME" pattern="[a-zA-Z]+" class="nonpass">
 
                         <input type="email" name="email" id="email"
-                        placeholder="Email*">
+                        placeholder="EMAIL" class="nonpass">
 
-                        <input type="text" name="phonenumber" id="phonenumer" placeholder="Phone Number*" pattern="[\d]{11}">
-
-                        <input type="password" name="password" id="password" placeholder="Password*" error>
+                        <input type="text" name="phonenumber" id="phonenumer" placeholder="PHONE NUMBER" pattern="[\d]{11}" class="nonpass">
+                        
+                        <!-- Client side validation in js -->
+                        <input type="password" name="password" id="password" placeholder="PASSWORD">
 
                         <input type="password" name="confirm" id="confirm"
-                        placeholder="Confirm Passowrd*" error>
+                        placeholder="CONFIRM PASSWORD">
 
                     </form>
                 </div>
                 
             </div>
             <div>
-                <button>Create Account</button></div>
+                <button type="submit">CREATE ACCOUNT</button></div>
             <div>
                 <p>
                     Already have an account? <a href="./index.html">Log in</a>
