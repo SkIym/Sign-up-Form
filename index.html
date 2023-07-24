@@ -12,19 +12,43 @@
         <div id="background">
             <div class="flex-container logo-container">
                 <img id="logo" src="https://static.vecteezy.com/system/resources/previews/011/124/460/original/panda-origami-illustration-design-line-art-geometric-for-icon-logo-design-element-etc-png.png" alt="Logo of a cute panda">
-                <span id="logo-name">panda</span>
+                <span id="logo-name">odin</span>
             </div>
         </div>
         <div id="details">
             <div id="disclaimer">This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet sem nec libero euismod, in tristique justo facilisis. Etiam aliquet sem nec. Sign up <em>now</em> to get started.</div>
             <div id="disclaimer-2">You <em>know</em> &nbsp; you want to.</div>
-            <div>mainform
-                <form action="/">
+            <div id="sign-up-bg">
+                <div id="sign-up-main">
+                    <span style="font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1.3vw;">Let's do this!</span>
+                    <form action="/" method="post">
+                        
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name*"
+                        pattern="[a-zA-Z]+">
 
-                </form>
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name*" pattern="[a-zA-Z]+">
+
+                        <input type="email" name="email" id="email"
+                        placeholder="Email*">
+
+                        <input type="text" name="phonenumber" id="phonenumer" placeholder="Phone Number*" pattern="[\d]{11}">
+
+                        <input type="password" name="password" id="password" placeholder="Password*" error>
+
+                        <input type="password" name="confirm" id="confirm"
+                        placeholder="Confirm Passowrd*" error>
+
+                    </form>
+                </div>
+                
             </div>
-            <div> create button</div>
-            <div>already have an account?</div>
+            <div>
+                <button>Create Account</button></div>
+            <div>
+                <p>
+                    Already have an account? <a href="./index.html">Log in</a>
+                </p>
+            </div>
         </div>  
     </main>
 </body>
